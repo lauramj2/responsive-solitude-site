@@ -15,16 +15,14 @@
 <body>
     <header class="site-header">
         <div class="title">
-            <p><i class="fa-solid fa-web-awesome"></i></p>
-            <!-- <img class="logo" src="images/logo.png"> -->
+            <p><i class="fa-solid fa-dragon"></i></p>
             <h1>Dragonborn's Solitude Tours</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="full-article.html">Tours</a></li>
-                </ul>
-            </nav>
+            <select id="mySelect" style="background-color: transparent">
+                <option disabled selected value>Menu</option>
+                <option value="index.html">Home</option>
+                <option value="about.html">About Me</option>
+                <option value="full-article.html">Tours</option>
+            </select>
         </div>
         <div class="header-text">
         <!-- <img src="/images/solitude-far.jpg"> -->
@@ -33,6 +31,9 @@
             <p>After months of exploring Solitude's streets, I have decided that I am qualified to offer tours of the city to travelers.</p>
         </div>
     </header>
+
+    <script src="full-article.js"></script>
+
 </body>
 
 </html>

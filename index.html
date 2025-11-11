@@ -16,16 +16,14 @@
 
     <header class="site-header">
         <div class="title">
-            <!-- <img class="logo" src="images/logo.png"> -->
             <p><i class="fa-solid fa-dragon"></i></p>
             <h1>Dragonborn's Solitude Tours</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="full-article.html">Tours</a></li>
-                </ul>
-            </nav>
+            <select id="mySelect" style="background-color: transparent">
+                <option disabled selected value>Menu</option>
+                <option value="index.html">Home</option>
+                <option value="about.html">About Me</option>
+                <option value="full-article.html">Tours</option>
+            </select>
         </div>
         <div class="header-text">
         <!-- <img src="/images/solitude-far.jpg"> -->
@@ -65,7 +63,8 @@
             <img src="/images/Empirewarehouse.webp">
             <header class="article-header">
                 <h3>The East Empire Trading Company</h3>
-                <p>The East Empire Trading Company is an Imperial merchant organization controlled by the Empire. 
+                <p>
+                    The East Empire Trading Company is an Imperial merchant organization controlled by the Empire. 
                     The Company's main warehouse is located in a building on the Solitude docks, also serving as the Company's headquarters. 
                     This is best admired from the outside, however, as the guards are hostile to all trespassers.
                 </p>
@@ -77,7 +76,7 @@
     <footer>
 
         <h4>Dragonborn's Solitude Tours</h4>
-        <p>Copyright <i id="copyright" class="fa-regular fa-copyright"></i></p>
+        <p class="copyright">Copyright <i id="copyright" class="fa-regular fa-copyright"></i> </p>
 
     </footer>
 

@@ -9,4 +9,11 @@ const monthIndex = monthArr.at(month)
 
 
 document.getElementById("date").innerText = monthIndex + " " + day + "," + " " +  " " + year
-document.getElementById("copyright").innerText += year
+document.getElementById("copyright").append(year)
+
+document.getElementById("mySelect").addEventListener("change", function(){
+    const selectedValue = this.value
+    if (selectedValue) {
+        window.location.href = selectedValue;
+    }
+})

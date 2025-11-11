@@ -12,7 +12,6 @@ body {
     background-repeat: no-repeat;
     font-family: "MedievalSharp", cursive;
     height: 100vh;
-    /* justify-content: space-between; */
 }
 
 /* Header */
@@ -41,26 +40,33 @@ body {
     width: 100%;
     font-size: .8rem;
     color: #243048;
-    padding: 0em 1em;
+    /* padding: 0em 0em; */
 }
-
-/* .logo {
-    object-fit: cover;
-    width: 34px;
-    height: 34px;
-} */
 
 .title h1 {
     font-size: .9rem;
 }
 
-.title nav {
+select {
+    appearance: base-select;
+    padding: 0.5em;
+}
+
+/* select::picker-icon {
+
+} */
+
+/* .title nav {
     font-size: .6rem;
 }
 
+.title a {
+    text-decoration: none;
+    color: #243048;
+} */
+
 .title p {
     font-size: 1.5rem;
-    /* padding-right: 1em; */
 }
 
 nav {
@@ -83,7 +89,7 @@ ul {
 
 /* Main */
 
-.article-one {
+/* .article-one {
     grid-area: 1;
 }
 
@@ -93,7 +99,7 @@ ul {
 
 .article-three {
     grid-area: 3;
-}
+} */
 
 /* main {
     margin: 1em;
@@ -176,11 +182,18 @@ footer {
     margin-bottom: 0;
     padding: 1.5em;
     width: 100%;
+    text-align: center;
+    align-items: center;
 }
 
 footer h4 {
     padding-bottom: 0.5em;
 }
+
+footer p {
+    padding-right: 2em;
+}
+
 
 
 
@@ -204,12 +217,14 @@ footer h4 {
         background-position: center center;
     }*/
     article {
-        flex: 1 20em;
+        flex: 1 15em;
     }
     .site-header {
         background-color: #94B5C2;
-        background-repeat: repeat;
+        background-repeat: repeat-x;
+        background-size: cover;
         width: 100%;
+        height: 350px;
     }
 
     .title {
@@ -221,6 +236,9 @@ footer h4 {
         padding: 0.25em 1em;
         margin-top: 0.3em;
         margin-bottom: auto;
+    }
+    main {
+        margin: 1em 2em 2em 2em;
     }
 }
 
@@ -250,8 +268,9 @@ footer h4 {
 
     .site-header {
         background-color: #94B5C2;
-        background-repeat: repeat;
+        background-repeat: repeat-x;
         width: 100%;
+        height: 300px;
     }
 
     .title {
@@ -261,12 +280,16 @@ footer h4 {
         font-size: .8rem;
         color: #243048;
         padding: 0.25em .5em;
-        margin-top: 0.em;
+        margin-top: 0.4em;
         margin-bottom: auto;
     }
     
     article {
         flex: 1 2;
+    }
+
+    main {
+        padding: 2em;
     }
 }
 
