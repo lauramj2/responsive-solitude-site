@@ -244,7 +244,7 @@ footer p {
 
 /* Large */
 
-@media(min-width: 870px) and (max-width: 1500px) {
+@media(min-width: 870px) and (max-width: 7000px) {
     /* main {
         grid-template-columns: 1fr 1fr / repeat(5, 1fr);
         grid-template-areas: 
