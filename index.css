@@ -17,30 +17,39 @@ body {
 /* Header */
 
 .site-header {
-    background: #94B5C2 url("/images/solitude-far2.jpg");
-    background-position: bottom;
+    background: url("/images/solitude-far3.jpg");
+    background-color: #94B5C2;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     max-width: 100%;
     background-size: contain;
-    background-repeat: no-repeat;
     height: 200px;
     font-size: .25rem;
+    width: 100%;
 }
 
 .title {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 1em;
-    margin-bottom: auto;
-    width: 100%;
+    justify-content: space-between;
+    /* margin-top: 1em; */
+    /* margin-bottom: auto; */
+    width: 75%;
     font-size: .8rem;
     color: #243048;
     /* padding: 0em 0em; */
+    background: #A4C0CB;
+    border: 1.5px solid #243048;
+    /* width: 35%; */
+    padding: 0.25em .5em;
+    margin-top: .5em;
+    margin-bottom: auto;
 }
 
 .title h1 {
@@ -52,6 +61,28 @@ select {
     padding: 0.5em;
 }
 
+.header-text {
+    text-align: left;
+    /* margin-top: 1em; */
+    /* margin-bottom: auto; */
+    width: 90%;
+    color: #243048;
+    /* padding: 0em 0em; */
+    background: #A4C0CB;
+    border: 1.5px solid #243048;
+    border-radius: 5px;
+    /* width: 35%; */
+    margin-top: auto;
+    margin-bottom: 0.5em;
+    font-size: .5rem;
+    padding: 0.25em 0em 0.25em .25em;
+}
+
+.header-text h2, p {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-size: 1em;
+}
 /* select::picker-icon {
 
 } */
@@ -77,15 +108,6 @@ ul {
     list-style-type: none;
 }
 
-.header-text {
-    font-size: .5rem;
-    margin-top: auto;
-    margin-bottom: 0;
-    /* background: #A4C0CB;
-    border: 1px solid #243048; */
-    padding: 0.5em;
-    color: white;
-}
 
 /* Main */
 
@@ -239,6 +261,10 @@ footer p {
     }
     main {
         margin: 1em 2em 2em 2em;
+    }
+    .header-text h2, p {
+        padding: .25em;
+        font-size: 1em;
     }
 }
 
